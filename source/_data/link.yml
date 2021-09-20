@@ -1,0 +1,35 @@
+- class_name: 编程
+  class_desc: 编程网站
+  link_list:
+    - name: 菜鸟教程
+      link: https://www.runoob.com/
+      avatar: https://i.loli.net/2021/08/14/mJbFPhAuYdE8QBn.png
+      descr: 编程教学网站
+    - name: 牛客网
+      link: https://www.nowcoder.com/
+      avatar: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-c791ec5154e3226a69b214cb6f41613d_r.jpg&refer=http%3A%2F%2Fpic2.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631547422&t=ffed4b4d26784dac7716207588184a9c
+      descr: 面试题库网站
+    - name: 力扣
+      link: https://leetcode-cn.com/
+      avatar: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.qqtn.com%2Fup%2F2019-11%2F15746641057799543.png&refer=http%3A%2F%2Fpic.qqtn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631547371&t=9ec7c0185797aa508452b82766541811
+      descr: 编程练习网站
+    - name: CSDN
+      link: https://www.csdn.net/
+      avatar: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcnstatic01.e.vhall.com%2Fupload%2Fwebinars%2Fimg_url%2F74%2F38%2F74381cb6027598e0e6c92691ff9328d4.jpeg&refer=http%3A%2F%2Fcnstatic01.e.vhall.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631547338&t=c9f7e7b9d87744cd290acf238e7b359e
+      descr: 编程社区网站
+
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: bilibili
+      link: https://www.bilibili.com/
+      avatar: https://i.loli.net/2021/08/14/gzWda4uifpFHsMZ.png
+      descr: 视频网站
+    - name: 知乎
+      link: https://www.zhihu.com/
+      avatar: https://i.loli.net/2021/08/14/V7jPc4GbyzBDaUn.png
+      descr: 中国最大知识分享平台
+    - name: 知网
+      link: https://i.cnki.net/
+      avatar: https://i.loli.net/2021/08/14/qevY1UpSDjHxOcB.png
+      descr: 学术平台
