@@ -5,7 +5,7 @@
 # Site （网站）
 title: 陈若的博客
 subtitle: '经济基础，决定上层建筑'
-description: '经济是一切物质条件运行的基础'
+description: '经济以人为本，学习以勤为立'
 keywords: '博客'
 author: 陈若
 language: zh-CN
@@ -114,7 +114,7 @@ douban:
     quote: '(。＿ 。） ✎＿学习计划走起'
     meta: true
     comments: true
-    top_img: https://w.wallhaven.cc/full/rd/wallhaven-rdyp17.jpg
+    top_img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-72lrzy.jpg
     aside: true
     path: books
     limit:
@@ -123,7 +123,7 @@ douban:
     quote: 'Σσ(・Д・；)我我我什么都没做!!!'
     meta: true
     comments: true
-    top_img: https://w.wallhaven.cc/full/8o/wallhaven-8okmwj.jpg
+    top_img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-8okmwj.jpg
     aside: true
     path: movies
     limit:
@@ -132,7 +132,7 @@ douban:
     quote: '눈_눈 你逗我'
     meta: true
     comments: true
-    top_img: https://w.wallhaven.cc/full/j3/wallhaven-j3kxlq.png
+    top_img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-282w3m.jpg
     aside: true
     path: games
     limit:
@@ -153,7 +153,7 @@ githubcalendar:
   githubcalendar_html: '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>'
   pc_minheight: 280px
   mobile_minheight: 0px
-  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']"
+  color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']"
   api: https://python-github-calendar-api.vercel.app/api
   # api: https://python-gitee-calendar-api.vercel.app/api
   calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
@@ -205,7 +205,7 @@ live2d:
 
 magnet:
   enable: true
-  priority: 1
+  priority: 2
   enable_page: /
   type: tags
   devide: 2
@@ -215,19 +215,19 @@ magnet:
       icon: 📚
     - name: Python
       display_name: Python教程
-      icon: 🎮
+      icon: 📔
     - name: 货币金融学
       display_name: 货币金融学笔记
-      icon: 🐱‍👓
+      icon: 📕
     - name: 国际经济
       display_name: 国际经济学
-      icon: 👩‍💻
+      icon: 📓
     - name: css
       display_name: css总结
       icon: 📒
     - name: 数据结构
       display_name: 数据结构
-      icon: 💡
+      icon: 📙
   color_setting:
     text_color: black
     text_hover_color: white
@@ -239,3 +239,59 @@ magnet:
     index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""
+
+lazyload:
+  enable: false
+  onlypost: false
+  loadingImg: 
+
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
+    - '**/fireworks.js'
+
+
+
+# hexo-offline-popup.
+service_worker:
+  maximumFileSizeToCacheInBytes: 3145728 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
+  staticFileGlobs:
+    - public/**/*.{js,html,xml,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
+    # - public/**/*.{html,xml} #精简版使用这行即可
+  # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。。
+  # 注意，此处的文件类型就是会缓存下来的所有文件类型，如果不需要缓存那么多，
+  # 而只是想判断网页更新与否，缓存html和xml即可。
+  stripPrefix: public
+  verbose: false
+  runtimeCaching:
+    # CDNs - should be cacheFirst, since they should be used specific versions so should not change
+    - urlPattern: /* # 如果你需要加载CDN資源，请配置该选项，如果沒有，可以不配置。
+      handler: cacheFirst
+      options:
+        origin: unpkg.com # 又拍云
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net # jsdelivr
+    # 更多cdn可自行参照上述格式进行配置。
+
+aplayer:
+  meting: true

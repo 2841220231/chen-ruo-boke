@@ -1,93 +1,70 @@
-const gulp = require('gulp')
-const cleanCSS = require('gulp-clean-css')
-const htmlmin = require('gulp-html-minifier-terser')
-const htmlclean = require('gulp-htmlclean')
-const imagemin = require('gulp-imagemin')
-const workbox = require("workbox-build");
-// gulp-terser (Èç¹ûÊ¹ÓÃ gulp-terser,°ÑÏÂÃæµÄ//È¥µô)
-// const terser = require('gulp-terser');
-
-// babel
-const uglify = require('gulp-uglify');
-const babel = require('gulp-babel');
-
-//pwa
-gulp.task('generate-service-worker', () => {
-    return workbox.injectManifest({
-        swSrc: './sw-template.js',
-        swDest: './public/sw.js',
-        globDirectory: './public',
-        globPatterns: [
-            "**/*.{html,css,js,json,woff2}"
-        ],
-        modifyURLPrefix: {
-            "": "./"
-        }
-    });
-});
-
-//minify js babel
+//ç”¨åˆ°çš„å„ä¸ªæ’ä»¶
+var gulp = require('gulp');
+var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-html-minifier-terser');
+var htmlclean = require('gulp-htmlclean');
+var fontmin = require('gulp-fontmin');
+// gulp-tester
+var terser = require('gulp-terser');
+// å‹ç¼©js
 gulp.task('compress', () =>
-    gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
-        .pipe(babel({
-            presets: ['@babel/preset-env']
-        }))
-        .pipe(uglify().on('error', function (e) {
-            console.log(e);
-        }))
-        .pipe(gulp.dest('./public'))
-);
-
-// minify js - gulp-terser (Èç¹ûÊ¹ÓÃ gulp-terser,°ÑÏÂÃæÇ°ÃæµÄ//È¥µô)
-// gulp.task('compress', () =>
-//   gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
-//     .pipe(terser())
-//     .pipe(gulp.dest('./public'))
-// )
-
-//css
+  gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
+    .pipe(terser())
+    .pipe(gulp.dest('./public'))
+)
+//å‹ç¼©css
 gulp.task('minify-css', () => {
-    return gulp.src('./public/**/*.css')
+    return gulp.src(['./public/**/*.css'])
         .pipe(cleanCSS({
             compatibility: 'ie11'
         }))
         .pipe(gulp.dest('./public'));
 });
-
-
-// Ñ¹Ëõ public Ä¿Â¼ÄÚ html
+//å‹ç¼©html
 gulp.task('minify-html', () => {
     return gulp.src('./public/**/*.html')
         .pipe(htmlclean())
         .pipe(htmlmin({
-            removeComments: true, //Çå³ı HTML Ô]ÊÍ
-            collapseWhitespace: true, //Ñ¹Ëõ HTML
-            collapseBooleanAttributes: true, //Ê¡ÂÔ²¼¶ûÊôĞÔµÄÖµ <input checked="true"/> ==> <input />
-            removeEmptyAttributes: true, //É¾³ıËùÓĞ¿Õ¸ñ×÷ÊôĞÔÖµ <input id="" /> ==> <input />
-            removeScriptTypeAttributes: true, //É¾³ı <script> µÄ type="text/javascript"
-            removeStyleLinkTypeAttributes: true, //É¾³ı <style> ºÍ <link> µÄ type="text/css"
-            minifyJS: true, //Ñ¹ËõÒ³Ãæ JS
-            minifyCSS: true, //Ñ¹ËõÒ³Ãæ CSS
-            minifyURLs: true
+            removeComments: true, //æ¸…é™¤htmlæ³¨é‡Š
+            collapseWhitespace: true, //å‹ç¼©html
+            collapseBooleanAttributes: true,
+            //çœç•¥å¸ƒå°”å±æ€§çš„å€¼ï¼Œä¾‹å¦‚ï¼š<input checked="true"/> ==> <input />
+            removeEmptyAttributes: true,
+            //åˆ é™¤æ‰€æœ‰ç©ºæ ¼ä½œå±æ€§å€¼ï¼Œä¾‹å¦‚ï¼š<input id="" /> ==> <input />
+            removeScriptTypeAttributes: true,
+            //åˆ é™¤<script>çš„type="text/javascript"
+            removeStyleLinkTypeAttributes: true,
+            //åˆ é™¤<style>å’Œ<link>çš„ type="text/css"
+            minifyJS: true, //å‹ç¼©é¡µé¢ JS
+            minifyCSS: true, //å‹ç¼©é¡µé¢ CSS
+            minifyURLs: true  //å‹ç¼©é¡µé¢URL
         }))
         .pipe(gulp.dest('./public'))
 });
+//å‹ç¼©å­—ä½“
+function minifyFont(text, cb) {
+  gulp
+    .src('./public/fonts/*.ttf') //åŸå­—ä½“æ‰€åœ¨ç›®å½•
+    .pipe(fontmin({
+      text: text
+    }))
+    .pipe(gulp.dest('./public/fontsdest/')) //å‹ç¼©åçš„è¾“å‡ºç›®å½•
+    .on('end', cb);
+}
 
-// Ñ¹Ëõ public/uploads Ä¿Â¼ÄÚÍ¼Æ¬
-gulp.task('minify-images', async () => {
-    gulp.src('./public/img/**/*.*')
-        .pipe(imagemin({
-            optimizationLevel: 5, //ÀàĞÍ£ºNumber  Ô¤Éè£º3  È¡Öµ¹ Î§£º0-7£¨ÓÅ»¯µÈ¼¶£©
-            progressive: true, //ÀàĞÍ£ºBoolean Ô¤Éè£ºfalse ÎŞÊ§ÕæÑ¹ËõjpgÍ¼Æ¬
-            interlaced: false, //ÀàĞÍ£ºBoolean Ô¤Éè£ºfalse ¸ôĞĞÉ¨Ãègif½øĞĞäÖÈ¾
-            multipass: false, //ÀàĞÍ£ºBoolean Ô¤Éè£ºfalse ¶à´ÎÓÅ»¯svgÖ±µ½ÍêÈ«ÓÅ»¯
-        }))
-        .pipe(gulp.dest('./public/img'));
+gulp.task('mini-font', (cb) => {
+  var buffers = [];
+  gulp
+    .src(['./public/**/*.html']) //HTMLæ–‡ä»¶æ‰€åœ¨ç›®å½•è¯·æ ¹æ®è‡ªèº«æƒ…å†µä¿®æ”¹
+    .on('data', function(file) {
+      buffers.push(file.contents);
+    })
+    .on('end', function() {
+      var text = Buffer.concat(buffers).toString('utf-8');
+      minifyFont(text, cb);
+    });
 });
-
-// Ö´ĞĞ gulp ÃüÁîÊ±Ö´ĞĞµÄÈÎÎñ
-gulp.task("default", gulp.series("generate-service-worker", gulp.parallel(
-    'compress', 'minify-html', 'minify-css', 'minify-images'
-)));
-
-
+// è¿è¡Œgulpå‘½ä»¤æ—¶ä¾æ¬¡æ‰§è¡Œä»¥ä¸‹ä»»åŠ¡
+gulp.task('default', gulp.parallel(
+  'compress', 'minify-css', 'minify-html','mini-font'
+))

@@ -2,7 +2,7 @@
 title: 统计
 date: 2021-09-16 05:48:16
 highlight_shrink: false
-top_img: "https://w.wallhaven.cc/full/72/wallhaven-72wzq9.png"
+top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-3k7qjv.jpg"
 ---
 
 

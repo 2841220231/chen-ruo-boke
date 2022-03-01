@@ -1,14 +1,22 @@
 title: Python教程(四)
 
-keywords: "编程"
+date: 2021-08-15 7:53:00
 
-tags: "Python"
+keywords: "Python"
+
+tags: 
+
+- 教程笔记
+- Python
+- 编程语言
 
 categories: "Python"
 
-top_img:  "https://w.wallhaven.cc/full/5w/wallhaven-5wwzq5.png"
+top_img:  "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-5wwzq5.png"
 
-cover: https://w.wallhaven.cc/full/dg/wallhaven-dgdjml.png
+cover: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-dgdjml.png
+
+background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-45k784.jpg)
 
 ---
 

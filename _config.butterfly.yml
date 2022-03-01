@@ -21,7 +21,7 @@ menu:
    阅读: /books ||  fas fa-book-reader
    游戏: /games ||  fas fa-dice-d6
   统计: /charts ||  fas fa-balance-scale
-  友情链接: /link/ ||  fas fa-users
+  自习室: /self-study/ ||  fas fa-torah
   留言板: /comments/ || fas fa-envelope
   关于: /about/ ||  fas fa-paper-plane
 
@@ -90,58 +90,67 @@ katex:
   per_page: false
   hide_scrollbar: true
 
-# Image (圖片設置)
+markdown:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
+
+# 图片设置
 # --------------------------------------
 
-# Favicon（網站圖標）
-favicon: /Gallery/头像.jpg
+# 网站图标
+favicon: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/头像.jpg
 
-# Avatar (頭像)
+# 头像
 avatar:
-  img: /Gallery/头像.jpg
+  img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/头像.jpg
   effect: false
 
-# Disable all banner image
+# 禁用所有顶部图
 disable_top_img: false
 
-# The banner image of home page
-index_img: 'https://w.wallhaven.cc/full/z8/wallhaven-z856oo.jpg'
+# 主页的顶部图
+index_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-x8wmez.2go7w3xpp1hc.webp"
+# https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/wallhaven-k7rxj1.2812mk75mgw0.webp
+#'https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-j8eyw5.png'
 
-# If the banner of page not setting, it will show the top_img
-default_top_img: 'https://w.wallhaven.cc/full/3z/wallhaven-3z3y6v.jpg'
+# 如果页面的顶部图没有设置，它将显示top_img
+default_top_img: 'https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-v9djg5.jpg'
 
-# The banner image of archive page
-archive_img: 'https://w.wallhaven.cc/full/6o/wallhaven-6o2zqx.jpg'
+# 归档页的顶部图
+archive_img: 'https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-e7wxwl.png'
 
 # If the banner of tag phttps://w.wallhaven.cc/full/v9/wallhaven-v9z1dl.jpgage not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: 
+tag_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-x8p2zz.jpg"
 
-# The banner image of tag page
+# 标签页的顶部图
 # format:
 #  - tag name: xxxxx
-tag_per_img: 
+tag_per_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-k7lqeq.jpg"
 
-# If the banner of category page not setting, it will show the top_img
+# 如果分类页面的横幅没有设置，它将显示top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: 
+category_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-2e3x6m.png"
 
-# The banner image of category page
+# 分类页面的顶部图
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-q2loxd.jpg"
 
 cover:
-  # display the cover or not (是否顯示文章封面)
+  # 是否显示文章封面
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # the position of cover in home page (封面顯示的位置)
+  # 首页中文章封面的位置
   # left/right/both
   position: both
-  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
+  #  当没有设置封面时，会显示默认封面
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    # - https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-pkgj13.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -150,9 +159,9 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: '网页丢失了呢(;´༎ຶД༎ຶ`)'
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/aKOcLiyPl2JQdFD.png
 
 post_meta:
   page: # Home Page
@@ -203,8 +212,10 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
+  coinAudio: https://chen-ruo.top/music/bikl.wav
+# https://cdn.jsdelivr.net/npm/akilar-candyassets@1.0.16/audio/coin.mp3
   QR_code:
-    - img: https://i.loli.net/2021/08/10/GIBoD3zjUyAKda4.png
+    - img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/GIBoD3zjUyAKda4.png
       link:
       text: 微信
 
@@ -269,15 +280,15 @@ addtoany:
 
 # Comments System
 # --------------------------------------
-
+# 在线聊天模块
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
   
-    - Valine
+    - Twikoo
   valine:
-    enable: true # 是否启用Valine评论系统
+    enable: false # 是否启用Valine评论系统
     appId:  Qg2fyn2wmH3iVTKW2uM6WGia-gzGzoHsz # 你的APP ID
     appKey:  vJrFx4cqryozCSpzoecedV0I # 你的APP KEY
     pageSize: 10 # 每页评论数量
@@ -296,7 +307,7 @@ comments:
 
 
   # - Disqus
-  text: false # Display the comment name next to the button
+  text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
@@ -373,8 +384,8 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
+  envId: cloudbase-prepaid-6ehzwd684da903
+  region: ap-shanghai
   visitor: false
   option:
 
@@ -424,7 +435,7 @@ footer:
   owner:
     enable: true
     since: 2021
-  custom_text: 你好，这里是陈若的博客空间
+  custom_text: 你好，这里是陈若的博客
   copyright: false # Copyright of theme and framework
 
 # Analysis
@@ -517,7 +528,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://w.wallhaven.cc/full/k7/wallhaven-k72zo1.jpg)
+background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/001.1kqr0jy3vt6o.webp)
 
 
 # Footer Background
@@ -606,8 +617,7 @@ font:
   font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
   code-font-family:  consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
-# Font settings for the site title and site subtitle
-# 左上角網站名字 主頁居中網站名字
+# 网站标题和网站字幕的字体设置
 blog_title_font:
   font_link:  
   font-family:
@@ -639,13 +649,15 @@ subtitle:
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
     - 今日事&#44;今日毕
+    - 缘，妙不可言
+ 
 
 # Loading Animation (加載動畫)
 preloader: 
-  enable:  true
-  load_color:  '#37474f'
-  load_style:  ironheart  #ironheart 是钢铁侠核心加载动画  wizard 是巫师施法加载动画  spinner-box 是主题原版的盒子加载动画  image 为自定义添加静态图片或 gif 作为加载动画  scarecrow 是稻草人跳动加载动画
-  load_image:  image
+  enable: true
+  load_color: '#37474f'
+  load_style: image  #ironheart 是钢铁侠核心加载动画  wizard 是巫师施法加载动画  spinner-box 是主题原版的盒子加载动画  image 为自定义添加静态图片或 gif 作为加载动画  scarecrow 是稻草人跳动加载动画
+  load_image: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/%E8%83%8C%E6%99%AF/9f5310a2d38c3cb00a8b1de26afd5c0e.gif
 
 # aside (側邊欄)
 # --------------------------------------
@@ -666,8 +678,8 @@ aside:
       link: mailto:2841220231@.com
   card_announcement:
     enable: true
-    content: 这是陈若的博客空间
-    twopeople: '<div class="twopeople"><div class="container"style="height:200px;"><canvas class="illo"width="800"height="800"style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://cdn.guole.fun/js/twopeople1.js"></script><script src="https://cdn.guole.fun/js/zdog.dist.js"></script><script id="rendered-js"src="https://cdn.guole.fun/js/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center}canvas{display:block;margin:0 auto;cursor:move}</style></div>'
+    content: 这是陈若的博客空间<img src="https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/67tool.20g4pg56kv7k.webp">
+    twopeople: 
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -707,7 +719,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 2021/7/1 00:00:00
+  publish_date: 2021/1/1 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -732,11 +744,11 @@ newest_comments:
 # --------------------------------------
 
 # Change font size
-change_font_size: true
+change_font_size: false
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -805,7 +817,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     # - xxxx
     # - xxxx
@@ -820,7 +832,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
@@ -846,15 +858,15 @@ lazyload:
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
+# PWA
 pwa:
   enable: true
-  manifest: /img/pwa/manifest.json
-  theme_color: "#fff"
-  apple_touch_icon: /img/pwa/apple-touch-icon.png
-  favicon_32_32: /img/pwa/32.png
-  favicon_16_16: /img/pwa/16.png
-  mask_icon: /img/pwa/safari-pinned-tab.svg
-
+  manifest: /manifest.json
+  theme_color: '#212121'
+  apple_touch_icon: /Gallery/siteicon/apple-touch-icon.png
+  favicon_32_32: /Gallery/siteicon/favicon-32x32.png
+  favicon_16_16: /Gallery/siteicon/favicon-16x16.png
+  mask_icon: /Gallery/siteicon/safari-pinned-tab.svg
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -872,18 +884,26 @@ inject:
      #- <script defer src="/css/universe.css"></script> 
      #- '<canvas id="universe"></canvas>'
      #- <link rel="stylesheet" href="/css/mycss.css">
+     #- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/modify.css">
+     - <script defer src="/js/bber.js"></script>
+     - <script defer src="/css/bber.css"></script>
      - <script src="//code.tidio.co/r5iox0jmahok7wu78aq2maqjcxfxtspg.js" async></script>
      - <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script>
      - '<style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style>'
+     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/mainColor/heoMainColor.css">
+     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/404/404.css">
      - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'
-     
+     - <link rel="stylesheet" href="/css/custom/twikoo-beautify.css"  media="defer" onload="this.media='all'">
    
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
      #- <script async src="//at.alicdn.com/t/font_2823388_pf2ljbmopye.js"></script>
-     - <div class="aplayer no-destroy" data-id="8116933600" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
-     - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
+    # - <script defer src="https://cdn.jsdelivr.net/gh/graingert/wow@1.3.0/dist/wow.min.js"></script>
+     #- <script defer data-pjax src="/js/wow_init.js"></script>
+     - <div class="aplayer no-destroy" data-id="8018736558" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-theme="#224b8f" data-preload="none" data-autoplay="false" muted></div>
+    # - <div class="aplayer no-destroy" data-id="8324362066" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-theme="#224b8f" data-preload="none" data-autoplay="false" muted></div> 
+    #- '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
      - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     
     # - <script src="xxxx"></script>
@@ -899,9 +919,9 @@ CDN:
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   main: /js/main.js
   utils: /js/utils.js
+  # 打赏按钮投币效果
   coin_js: /js/coin.js
   coin_css: /css/coin.css
-
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
 
@@ -992,39 +1012,36 @@ weather:
 
 envelope_comment:
   enable: true
-  cover: https://w.wallhaven.cc/full/j3/wallhaven-j3kwvy.jpg # 信笺封面图
+  cover: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-j3kwvy.jpg # 信笺封面图
   message:  # 信笺内容，支持多行
     - 我是陈若的小助手ヽ(￣▽￣)ﾉ
     - 有什么想问的？(*๓´╰╯`๓)
     - 有什么想说的？(๑´ㅂ`๑) 
     - 有什么想吐槽的？ヾ(๑╹◡╹)ﾉ"
-  bottom: 小助手乐意为您服务！   # 信笺结束语，只能单行
+  bottom: 小助手很乐意为您服务！   # 信笺结束语，只能单行
   height:                          # 调整信笺划出高度，默认1050px
   path:                            # 【可选】comments 的路径名称。默认为 comments ， 生成的页面为 comments/index.html
   front_matter:                    # 【可选】comments页面的 front_matter 配置
     title: 留言板
     comments: true
     aside: false
-    top_img: "https://w.wallhaven.cc/full/1k/wallhaven-1kx8k9.jpg"
+    top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-1kx8k9.jpg"
 
 smooth_scrolling:
   enable:  true
 
 categoryBar:
-  enable: false
+  enable: true
   column: even # 显示列数,odd：3列 | even：4列
   row: 2 #显示行数，默认两行，超过行数切换为滚动显示
   descr:
-    - 长篇小说连载
-    - 杂谈教程
-    - 玩转Win10
-    - Ubuntu指南
-    - 个人日记
-    - 诗词歌赋
   cover:
-    - url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover1.webp')
-    - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
-    - rgba(45,67,89,0.7)
-    - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
-    - url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover5.webp')
-    - url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover6.webp')
+    - url('https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-47xp79.jpg')
+    - url("https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-4d8zlg.jpg")
+    - url("https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-8x73w2.jpg")
+    - url("https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-y851mg.png")
+    - url('https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-nml81k.jpg')
+    - url("https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-43w196.jpg")
+    - url("https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-nmp1ry.jpg")
+    - url("https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-4x65gz.jpg")
+

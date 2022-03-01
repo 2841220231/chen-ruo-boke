@@ -6,6 +6,6 @@ type: "tags"
 description: "标签页"
 keywords: "标签"
 highlight_shrink: false
-top_img: "https://w.wallhaven.cc/full/9m/wallhaven-9m863w.jpg"
+top_img: "https://w.wallhaven.cc/full/o3/wallhaven-o32gd5.jpg"
 ---
 

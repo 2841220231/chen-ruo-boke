@@ -6,7 +6,7 @@ type: "categories"
 comments: true
 description: "分类管理"
 keywords: "分类"
-top_img: "https://w.wallhaven.cc/full/57/wallhaven-57zvj9.jpg"
+top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-j3d78p.png"
 mathjax: 
 katex:
 aside: true
