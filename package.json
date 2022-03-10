@@ -1,0 +1,22 @@
+{
+  "name": "chen-ruo-boke",
+  "version": "1.0.0",
+  "description": "静态资源仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2841220231/image-my-web.git"
+  },
+  "keywords": [
+    "图库"
+  ],
+  "author": "chen-ruo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2841220231/image-my-web/issues"
+  },
+  "homepage": "https://github.com/2841220231/image-my-web#readme"
+}
