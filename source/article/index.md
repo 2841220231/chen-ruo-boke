@@ -6,7 +6,7 @@ type: "article"
 comments: true
 description: "文章库"
 keywords: "文章"
-top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/32bf0c9d6f114388b0935c7dc32f4e49.jpg"
+top_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/32bf0c9d6f114388b0935c7dc32f4e49.webp"
 mathjax:
 katex:
 aside: true

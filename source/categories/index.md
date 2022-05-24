@@ -6,7 +6,7 @@ type: "categories"
 comments: true
 description: "分类管理"
 keywords: "分类"
-top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-j3d78p.png"
+top_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-j3d78p.webp"
 mathjax: 
 katex:
 aside: true
@@ -15,3 +15,4 @@ highlight_shrink:
 
 ---
 
+<div id="categories-chart" style="background-color: #20232a; border-radius: 8px; height: 300px; padding: 0.5rem;"></div>

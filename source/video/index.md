@@ -15,23 +15,11 @@ top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wall
 background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-72lzo9-(1).jpg)
 
 ---
-{% gallery %}
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-v9gvz5.jpg)
-
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-j5zk2w.jpg)
-
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-mdeopy.jpg)
-
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-kwqkx7.jpg)
-
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-3zz3v3.png)
-
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-vgrmp3.jpg)
-
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-g8llye.jpg)
-{% endgallery %}
 
 
+
+
+![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-ymokjx.jpg)
 
 ## 经济学
 

@@ -1,0 +1,6 @@
+github个人访问令牌
+https://github.com/settings/tokens
+github 私人令牌
+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
+gitee  私人令牌
+e35ee19d68ec421571ff700fafdbb06a

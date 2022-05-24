@@ -22,7 +22,7 @@ background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背�
 {% endnote %}
 希望大家可以成为自己心目中最向往的存在
 
-![wallhaven-g8e98d](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-g8e98d.26l97da21lk.webp)
+<div id="posts-chart" style="background-color: #20232a; border-radius: 8px; height: 300px; padding: 0.5rem;"></div>
 
 ## 鼓励时间
 学习是冒险更是对自我的一场毅力的历练
@@ -31,6 +31,7 @@ background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背�
 {% tabs test4 %}
 <!-- tab 低头是题海 抬头是未来 -->
 {% raw  %}
+
 <div style="position: relative;width: 100%; height: 0;padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=850418896&bvid=BV1YL4y1t7MX&cid=477057113&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%;left: 0; top: 0;"> </iframe>
 </div>
 {% endraw %}

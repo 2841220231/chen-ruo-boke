@@ -12,8 +12,8 @@ aside: false
 
 comments: false
 
-top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-m928jy.jpg"
-background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-k7268d.jpg)
+top_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-m928jy.webp"
+background: url(https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-k7268d.webp)
 ---
 <div id='speak'></speak>
 <!-- 使用markdown渲染 -->
@@ -30,9 +30,9 @@ ispeakBber
       envId: 'cloudbase-prepaid-6ehzwd684da903', // 环境id
       region: 'ap-shanghai', // 腾讯云地址，默认为上海
       limit: 10, // 每次加载的条数，默认为5
-      avatar: 'https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/头像.jpg',
+      avatar: 'https://npm.elemecdn.com/chen-ruo-boke/背景/头像.webp',
       fromColor:'rgb(245, 150, 170)', // 下方标签背景颜色 默认 rgb(245, 150, 170)
-      loadingImg: 'https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/92744888_7.gif', // 自定义loading的图片，示例值为默认值
+      loadingImg: 'https://npm.elemecdn.com/chen-ruo-boke/背景/9f5310a2d38c3cb00a8b1de26afd5c0e.gif', // 自定义loading的图片，示例值为默认值
       dbName:'talks' // 数据的名称，默认talks，避免有人的命名不是这个，所以加入此配置字段。
     })
     .then(function() {
@@ -40,3 +40,4 @@ ispeakBber
       console.log('哔哔 加载完成')
     })
 </script>
+

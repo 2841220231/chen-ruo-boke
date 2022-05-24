@@ -178,7 +178,7 @@ search:
   path: search.xml
   field: post
   content: true
-  template: ./search.xml
+  # template: ./search.xml
   
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
@@ -216,17 +216,17 @@ magnet:
     - name: Python
       display_name: Python教程
       icon: 📔
-    - name: 货币金融学
-      display_name: 货币金融学笔记
+    - name: 教程笔记
+      display_name: 笔记
       icon: 📕
-    - name: 国际经济
-      display_name: 国际经济学
+    - name: 前端
+      display_name: 知识
       icon: 📓
-    - name: css
-      display_name: css总结
+    - name: 学习笔记
+      display_name: 总结
       icon: 📒
-    - name: 数据结构
-      display_name: 数据结构
+    - name: 编程
+      display_name: 计算机知识
       icon: 📙
   color_setting:
     text_color: black

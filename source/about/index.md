@@ -1,19 +1,23 @@
 ---
 title: 关于
-top_img: "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/3f878fc75ad84405bffa29a309238655.jpg"
+top_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/3f878fc75ad84405bffa29a309238655.webp"
 date: 2021-06-27 00:22:33
-background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-rde7oq.png)
+background: url(https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-rde7oq.webp)
+
 ---
 
 
 
 # 关于我
 
-没错，我还没想好怎么写…
+为什么要在博客写这种东西呢？对这个世界来说，成功的人的经历才值得借鉴，他们说的话才有参考价值
 
-{% note blue 'fas fa-bullhorn' modern %}
-当前网站开发程度10%
-{% endnote %}
+我还未成功，但是成功的定义在每个人眼里都不一样吧
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-e7v9yr.jpg)
+对我来说，有些事情坚持下来了，几年，十几年，几十年，坚持到一辈子，大概就是属于我的成功了
 
+与别人战斗能满足胜负欲、能收获名利，但与自己的战斗才能让你成长
+
+重要的不是你成功的时候有多少人追捧你，而是在遭遇什么事情的时候愿意向你伸手的人
+
+渴望成功没有错，但失败也不是什么大不了的事情。因为不管怎样，我还有身后一直在支持我的那些朋友家人。最重要的事情，当然也还有你们的那个1
