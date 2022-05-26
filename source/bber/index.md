@@ -17,7 +17,7 @@ background: url(https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-k7268d.w
 ---
 <div id='speak'></speak>
 <!-- 使用markdown渲染 -->
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber-md.min.js" charset="utf-8" ></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber-md.min.js" charset="utf-8" ></script> 
 <!-- 不使用markdown渲染 -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8" ></script>
 <!-- 解析微信表情（参考：https://github.com/buddys/qq-wechat-emotion-parser） -->
@@ -37,7 +37,6 @@ ispeakBber
     })
     .then(function() {
       // 哔哔加载完成后的回调函数，你可以写你自己的功能
-      console.log('哔哔 加载完成')
+      console.log('说说 加载完成')
     })
 </script>
-

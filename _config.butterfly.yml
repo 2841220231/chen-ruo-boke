@@ -7,29 +7,28 @@
 #   name: link || icon
 
 menu:
-  首页: / || icon-shouyediqiu
-  文章 || icon-wenzhangliebiao:
-    时间: /archives/ || icon-shijianzhouqi
-    标签: /tags/ || icon-biaoqian
-    分类: /categories/ ||  icon-fenlei
-  生活 || icon-shenghuofuwu:
-    # 图库: /Gallery ||   icon-tupian
-    # bilibili: /video/ ||  icon-bilibili
-    音乐: /music/ ||  icon-music
-    说说: /bber/ ||   icon-xiaoxi
-  实验室: /experiment/ || icon-tupian
-  自习室: /self-study/ ||  icon-zixi
-  留言板: /comments/ || icon-b-chat
-  关于我: /about/ ||  icon-guanyuwomen
-  开往: https://travellings.vercel.app/ || icon-010-feiji
-
+  首页: / || iconfont icon-shouye-shouye
+  文章 || iconfont icon-tiezi:
+    时间: /archives/ || iconfont icon-shijianzhou
+    标签: /tags/ || iconfont icon-biaoqian
+    分类: /categories/ ||  iconfont icon-fenlei
+  生活 || iconfont icon-shenghuoyongshuiliang30:
+    # 图库: /Gallery ||   iconfont
+    # bilibili: /video/ ||  iconfont
+    音乐: /music/ ||  iconfont icon-yinleku
+    说说: /bber/ ||   iconfont icon-recha
+  实验室: /experiment/ || iconfont icon-shiyan
+  自习室: /self-study/ ||  iconfont icon-zixi
+  留言板: /comments/ || iconfont icon-chat-full
+  关于我: /about/ ||  iconfont icon-guanyuwomen
+  开往: https://travellings.vercel.app/ || iconfont icon-chongdongguanli
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -48,11 +47,12 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  QQ邮箱: mailto:2841220231@.com || icon-QQ
-  github: https://github.com/2841220231 || icon-github
-  CSDN: https://blog.csdn.net/A2841220231?spm=1000.2115.3001.5343 || icon-csdn
-  bilibili: https://space.bilibili.com/431850768 || icon-bilibili
-  知乎: https://www.zhihu.com/people/chen-ruo-82-60 || icon-shejiaotubiao-46
+  iconfont icon-qq: mailto:2841220231@.com || QQ邮箱
+  iconfont icon-github: https://github.com/2841220231 || github
+  iconfont icon-weixin: https://www.cdnjson.com/image/Yf8R5 || 微信
+  iconfont icon-csdn48: https://blog.csdn.net/A2841220231?spm=1000.2115.3001.5343 || CSDN
+  iconfont icon-bilibili: https://space.bilibili.com/431850768 || bilibili
+  iconfont icon-shejiaotubiao-46: https://www.zhihu.com/people/chen-ruo-82-60 || 知乎
 # search (搜索)
 # --------------------------------------
 
@@ -107,10 +107,10 @@ avatar:
   effect: false
 
 # 禁用所有顶部图
-disable_top_img: false
+disable_top_img: true
 
 # 主页的顶部图
-index_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-x8wmez.2go7w3xpp1hc.webp"
+index_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-rde7oq.webp"
 # https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/wallhaven-k7rxj1.2812mk75mgw0.webp
 #'https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-j8eyw5.png'
 
@@ -211,7 +211,7 @@ post_copyright:
 reward:
   enable: true
   coinAudio: https://chen-ruo.top/music/bikl.wav
-  # https://cdn.jsdelivr.net/npm/akilar-candyassets@1.0.16/audio/coin.mp3
+  # https://npm.elemecdn.com/akilar-candyassets@1.0.16/audio/coin.mp3
   QR_code:
     - img: https://npm.elemecdn.com/chen-ruo-boke/背景/GIBoD3zjUyAKda4.webp
       link:
@@ -435,7 +435,7 @@ footer:
   owner:
     enable: true
     since: 2021
-  custom_text: 你好，这里是陈若的博客
+  custom_text: 你好，这里是陈若的<a href="/#">博客</a>!
   copyright: false # Copyright of theme and framework
 
 # Analysis
@@ -668,9 +668,9 @@ subtitle:
 
 # Loading Animation (加载动画)
 preloader:
-  enable: false
+  enable: true
   load_color: "#37474f"
-  load_style: wizard #ironheart 是钢铁侠核心加载动画  wizard 是巫师施法加载动画  spinner-box 是主题原版的盒子加载动画  image 为自定义添加静态图片或 gif 作为加载动画  scarecrow 是稻草人跳动加载动画
+  load_style: hyperspace #ironheart 是钢铁侠核心加载动画  wizard 是巫师施法加载动画  spinner-box 是主题原版的盒子加载动画  image 为自定义添加静态图片或 gif 作为加载动画  scarecrow 是稻草人跳动加载动画
   # load_image: https://npm.elemecdn.com/chen-ruo-boke/%E8%83%8C%E6%99%AF/9f5310a2d38c3cb00a8b1de26afd5c0e.gif
 
 # aside (側邊欄)
@@ -692,7 +692,7 @@ aside:
       link: mailto:2841220231@.com
   card_announcement:
     enable: true
-    content: 这是陈若的博客空间<img src="https://npm.elemecdn.com/chen-ruo-boke/背景/67tool.20g4pg56kv7k.webp">
+    content: 这是陈若的博客空间
     twopeople:
   card_recent_post:
     enable: true
@@ -874,7 +874,7 @@ lazyload:
 # ---------------
 # PWA
 pwa:
-  enable: true
+  enable: false
   manifest: /manifest.json
   theme_color: "#212121"
   apple_touch_icon: /Gallery/siteicon/apple-touch-icon.png
@@ -895,26 +895,49 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/modify.css">
-    - <script defer src="/js/bber.js"></script>
-    - <script defer src="/css/bber.css"></script>
-    - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
-    - <script src="//code.tidio.co/r5iox0jmahok7wu78aq2maqjcxfxtspg.js" async></script>
-    - <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script>
-    - '<style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style>'
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/mainColor/heoMainColor.css">
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/404/404.css">
-    - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'
-    - <link rel="stylesheet" href="/css/custom/twikoo-beautify.css"  media="defer" onload="this.media='all'">
 
+    - <link rel="stylesheet" href="/css/custom/scroll_bars.css">
+
+    - <script src="https://npm.elemecdn.com/echarts@4.7.0/dist/echarts.min.js"></script>
+
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/404/404.css">
+
+    # 更改字体
+    - <link rel="stylesheet" href="/css/custom/font_gai.css">
+
+    - <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/zhheo/JS-Heo@main/rightmenu/rightmenu.css">
+    - <link rel="stylesheet" type="text/css" href="https://gcore.jsdelivr.net/gh/zhheo/JS-Heo@main/mainColor/heoMainColor.css">
+
+    # 自定义右键菜单
+    - <link rel="stylesheet" href="/css/custom/rightmenu.css">
+
+    # 阿里矢量图标
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_3430699_107yfwujfbrf.css">
+    #自定义,魔改
+    - <link rel="stylesheet" href="/css/custom/demo.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+    # 网站统计
+    - <script src="https://npm.elemecdn.com/echarts@4.7.0/dist/echarts.min.js"></script>
+    # 手机端
     - <script src="./js/shojiduan.js"></script>
-    - <script async src="//at.alicdn.com/t/font_3213831_87ya06jkg3s.js"></script>
+
+    #动画标签anima的依赖
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
+
+    # 手机侧边栏默认不展开
+    - <script src="./js/custom/customize.js"></script>
+
+    # 音乐
+    - <div data-pjax class="aplayer no-destroy" data-id="8018736558" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-theme="#224b8f" data-preload="none" data-autoplay="false" muted></div>
+
+    - <script async data-pjax src="https://gcore.jsdelivr.net/gh/zhheo/JS-Heo@main/rightmenu/rightmenu.js"></script>
+
+    # Butterfly fixed card widget
     - <script data-pjax defer src="/js/custom/fixed_card_widget.js"></script>
-    # - <script async data-pjax src="/js/randombg.js"></script>
-    - <script src="./js/chocolate.js"></script>
-    - <div class="aplayer no-destroy" data-id="8018736558" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-theme="#224b8f" data-preload="none" data-autoplay="false" muted></div>
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+
+    # 自定义右键菜单
+    - <script data-pjax defer src="/js/custom/rightmenu.js"></script>
 
     # - <script src="xxxx"></script>
 
@@ -922,95 +945,104 @@ inject:
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 CDN:
-  #平滑滚动
-  smooth_scrolling: https://cdn-1.nesxc.com/js/smooth-scrolling.js
-  # main
-  main_css: /css/index.css
-  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: /js/main.js
-  utils: /js/utils.js
-  # 打赏按钮投币效果
-  coin_js: /js/coin.js
-  coin_css: /css/coin.css
-  # pjax
-  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
+  # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
+  # option: local/jsdelivr
+  # Dev version cannot choose jsdelivr (dev版的主題不能設置為 jsdelivr)
+  internal_provider: local
+  # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
+  # option: local/jsdelivr
+  # when set it to local, you need to install hexo-butterfly-extjs
+  third_party_provider: jsdelivr
+  option:
+    #平滑滚动
+    smooth_scrolling: https://cdn-1.nesxc.com/js/smooth-scrolling.js
+    # main
+    main_css: /css/index.css
+    jquery: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
+    main: /js/main.js
+    utils: /js/utils.js
+    # 打赏按钮投币效果
+    coin_js: /js/coin.js
+    coin_css: /css/coin.css
+    # pjax
+    pjax: https://npm.elemecdn.com/pjax/pjax.min.js
 
-  # comments
-  gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
-  #valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
-  utterances: https://utteranc.es/client.js
-  twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
-  waline: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
+    # comments
+    gitalk: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.js
+    gitalk_css: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.css
+    valine: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js
+    #valine: https://npm.elemecdn.com/valine/dist/Valine.min.js
+    disqusjs: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqus.js
+    disqusjs_css: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqusjs.css
+    utterances: https://utteranc.es/client.js
+    twikoo: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/twikoo/1.4.18/twikoo.all.min.js
+    waline: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/waline/1.5.4/Waline.min.js
 
-  # share
-  addtoany: https://static.addtoany.com/menu/page.js
-  sharejs: https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js
-  sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
+    # share
+    addtoany: https://static.addtoany.com/menu/page.js
+    sharejs: https://npm.elemecdn.com/social-share.js/dist/js/social-share.min.js
+    sharejs_css: https://npm.elemecdn.com/social-share.js/dist/css/share.min.css
 
-  # search
-  local_search: /js/search/local-search.js
-  algolia_js: /js/search/algolia.js
-  algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
-  algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
+    # search
+    local_search: /js/search/local-search.js
+    algolia_js: https://npm.elemecdn.com/js-heo@1.0.11/algolia/algolia.js
+    algolia_search: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/instantsearch.js/2.10.5/instantsearch.min.js
+    algolia_search_css: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/instantsearch.js/2.10.5/instantsearch.min.css
 
-  # math
-  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
-  mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+    # math
+    mathjax: https://npm.elemecdn.com/mathjax@3/es5/tex-mml-chtml.js
+    katex: https://npm.elemecdn.com/katex@latest/dist/katex.min.css
+    katex_copytex: https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js
+    katex_copytex_css: https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.css
+    mermaid: https://npm.elemecdn.com/mermaid/dist/mermaid.min.js
 
-  # count
-  busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+    # count
+    busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
-  # background effect
-  canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
-  canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
-  canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
+    # background effect
+    canvas_ribbon: https://npm.elemecdn.com/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+    canvas_fluttering_ribbon: https://npm.elemecdn.com/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+    canvas_nest: https://npm.elemecdn.com/butterfly-extsrc@1/dist/canvas-nest.min.js
 
-  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
-  instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
-  typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
-  pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
+    lazyload: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js
+    instantpage: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js
+    typed: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js
+    pangu: https://npm.elemecdn.com/pangu/dist/browser/pangu.min.js
 
-  # photo
-  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
-  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
-  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
+    # photo
+    fancybox_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css
+    fancybox: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js
+    medium_zoom: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js
 
-  # snackbar
-  snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
-  snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
+    # snackbar
+    snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
+    snackbar: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
 
-  # effect
-  activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
-  fireworks: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js
-  click_heart: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js
-  ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
+    # effect
+    activate_power_mode: https://npm.elemecdn.com/butterfly-extsrc@1/dist/activate-power-mode.min.js
+    fireworks: https://npm.elemecdn.com/butterfly-extsrc@1/dist/fireworks.min.js
+    click_heart: https://npm.elemecdn.com/butterfly-extsrc@1/dist/click-heart.min.js
+    ClickShowText: https://npm.elemecdn.com/butterfly-extsrc@1/dist/click-show-text.min.js
 
-  # fontawesome
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+    # fontawesome
+    fontawesome: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
 
-  # Conversion between Traditional and Simplified Chinese
-  translate: /js/tw_cn.js
+    # Conversion between Traditional and Simplified Chinese
+    translate: https://npm.elemecdn.com/js-heo@1.0.6/translate/tw_cn.js
 
-  # justifiedGallery
-  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
-  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+    # justifiedGallery
+    justifiedGallery_js: https://npm.elemecdn.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
+    justifiedGallery_css: https://npm.elemecdn.com/justifiedGallery/dist/css/justifiedGallery.min.css
 
-  # aplayer
-  aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
-  aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
-  meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
+    # aplayer
+    aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    meting_js: https://npm.elemecdn.com/js-heo@1.0.12/metingjs/Meting.min.js
 
-  # Prism.js
-  prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
-  prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-  prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+    # Prism.js
+    prismjs_js: https://npm.elemecdn.com/prismjs@1.1.0/prism.js
+    prismjs_lineNumber_js: https://npm.elemecdn.com/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+    prismjs_autoloader: https://npm.elemecdn.com/prismjs/plugins/autoloader/prism-autoloader.min.js
 
 aplayer:
   meting: true
@@ -1020,23 +1052,6 @@ weather:
   enable: true #开关
   radius: 8 #圆角——越大越圆
   key: "e0bd0773d32c442781f0f6a28d4520cb" #key
-
-envelope_comment:
-  enable: true
-  cover: https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-j3kwvy.webp # 信笺封面图
-  message: # 信笺内容，支持多行
-    - 我是陈若的小助手ヽ(￣▽￣)ﾉ
-    - 有什么想问的？(*๓´╰╯`๓)
-    - 有什么想说的？(๑´ㅂ`๑)
-    - 有什么想吐槽的？ヾ(๑╹◡╹)ﾉ"
-  bottom: 小助手很乐意为您服务！ # 信笺结束语，只能单行
-  height: # 调整信笺划出高度，默认1050px
-  path: # 【可选】comments 的路径名称。默认为 comments ， 生成的页面为 comments/index.html
-  front_matter: # 【可选】comments页面的 front_matter 配置
-    title: 留言板
-    comments: true
-    aside: false
-    top_img: "https://npm.elemecdn.com/chen-ruo-boke/背景/wallhaven-1kx8k9.webp"
 
 smooth_scrolling:
   enable: true
@@ -1082,15 +1097,3 @@ fixed_card_widget:
       index: 0
       icon: fas fa-history
       title: 最新文章
-
-businesscard:
-  enable: true #总开关
-  QR_code: "https://npm.elemecdn.com/chen-ruo-boke/背景/8486c08d3c5e1d12f8ca0135f6842d7.3b79von08se0.webp" #加群二维码
-  master: 陈若 #群主ID
-  group: as2841220231 #QQ群号
-  created: 01/09/2019 #建群时间
-  front: Welcome to Chen Ruo's blog #卡面正面描述语
-  back1: sitelink #背面从上到下四行文字内容自定义
-  back2: <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0">有惊喜哦</a>
-  back3: There is only one chance in heaven, please cherish it.
-  back4: May my dog Xiaoqi, in Wangxing, be healthy and happy, and have no troubles.
