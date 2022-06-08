@@ -1,0 +1,20 @@
+top:
+  - class_name: latestBB
+    id_name:
+    name: 碎碎念
+    icon: fas fa-bolt
+    order: -1
+    html: |
+      <div class="swiper-container swiper-container-aside">
+        <div class="swiper-wrapper swiper-weapper-aside"></div>
+      </div>
+      <a class="bb-btn button--animated" href="/bber/" title="查看全部">
+      <script>
+        window.kkBBConfig = {
+          limit: 999,
+          blog:'/bber/',
+          api_url:  
+            'https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/bber.json'
+      }
+      </script>
+      <script src="https://npm.elemecdn.com/butterfly-bber-swiper/dist/index.min.js"></script>

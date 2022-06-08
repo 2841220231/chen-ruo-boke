@@ -4,12 +4,12 @@
 
 # Site （网站）
 title: 陈若的博客
-subtitle: '经济基础，决定上层建筑'
-description: '经济以人为本，学习以勤为立'
-keywords: '博客'
+subtitle: "经济基础，决定上层建筑"
+description: "经济以人为本，学习以勤为立"
+keywords: "博客"
 author: 陈若
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 
 # URL （网址）
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -37,7 +37,7 @@ titlecase: true # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -47,21 +47,21 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -81,7 +81,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -108,10 +108,10 @@ deploy:
 
 douban:
   user: 240968682
-  builtin: true
+  builtin: false
   book:
-    title: '藏书房'
-    quote: '(。＿ 。） ✎＿学习计划走起'
+    title: "藏书房"
+    quote: "(。＿ 。） ✎＿学习计划走起"
     meta: true
     comments: true
     top_img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-72lrzy.jpg
@@ -119,8 +119,8 @@ douban:
     path: books
     limit:
   movie:
-    title: '电影房'
-    quote: 'Σσ(・Д・；)我我我什么都没做!!!'
+    title: "电影房"
+    quote: "Σσ(・Д・；)我我我什么都没做!!!"
     meta: true
     comments: true
     top_img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-8okmwj.jpg
@@ -128,22 +128,22 @@ douban:
     path: movies
     limit:
   game:
-    title: '电竞房'
-    quote: '눈_눈 你逗我'
+    title: "电竞房"
+    quote: "눈_눈 你逗我"
     meta: true
     comments: true
     top_img: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-282w3m.jpg
     aside: true
     path: games
     limit:
-  timeout: 10000 
+  timeout: 10000
 
 # Ice Kano Plus_in
 # Hexo Github Canlendar
 # Author: Ice Kano
 # Modify: Lete乐特
 githubcalendar:
-  enable: true
+  enable: false
   enable_page: /
   user: 2841220231
   layout:
@@ -156,12 +156,12 @@ githubcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']"
   api: https://python-github-calendar-api.vercel.app/api
   # api: https://python-gitee-calendar-api.vercel.app/api
-  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  calendar_js: https://cdn1.tianli0.top/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
   plus_style: ""
 
 history_calendar:
   priority: 4
-  enable: true
+  enable: false
   enable_page: all
   layout:
     type: class
@@ -179,7 +179,7 @@ search:
   field: post
   content: true
   # template: ./search.xml
-  
+
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
 live2d:
@@ -195,16 +195,15 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   display:
-     position:  right
+    position: right
   mobile:
-     show: false   
+    show: false
   model:
-     scale: 1.2
-     use: live2d_models
-
+    scale: 1.2
+    use: live2d_models
 
 magnet:
-  enable: true
+  enable: false
   priority: 2
   enable_page: /
   type: tags
@@ -243,7 +242,7 @@ magnet:
 lazyload:
   enable: false
   onlypost: false
-  loadingImg: 
+  loadingImg:
 
 # 博文压缩
 neat_enable: true
@@ -255,7 +254,7 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '**/*.min.css'
+    - "**/*.min.css"
 # 压缩js
 neat_js:
   enable: true
@@ -263,12 +262,10 @@ neat_js:
   output:
   compress:
   exclude:
-    - '**/*.min.js'
-    - '**/jquery.fancybox.pack.js'
-    - '**/index.js'
-    - '**/fireworks.js'
-
-
+    - "**/*.min.js"
+    - "**/jquery.fancybox.pack.js"
+    - "**/index.js"
+    - "**/fireworks.js"
 
 # hexo-offline-popup.
 service_worker:

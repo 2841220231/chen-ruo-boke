@@ -16,13 +16,11 @@ background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背�
 
 ---
 
-# 关于自习者的空间
 {% note info no-icon %}
 做自习室的初心，是当时我正在准备一场考试，由于时间紧无法真正的静下心来，就有了可以做个自习室的想法，功能取其关键部分，因为在我之前的使用其他的软件和方式后，其实可以简化成一两个功能的，其他功能只会使得服务器资源边际效用递减，一方面可以帮自己静下心，另一方面，可以帮助大家在营造一个自习室的氛围
 {% endnote %}
 希望大家可以成为自己心目中最向往的存在
 
-<div id="posts-chart" style="background-color: #20232a; border-radius: 8px; height: 300px; padding: 0.5rem;"></div>
 
 ## 鼓励时间
 学习是冒险更是对自我的一场毅力的历练

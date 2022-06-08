@@ -7,16 +7,11 @@ keywords: "CSS"
 tags: 
 
 - 学习笔记
-- 编程
-- 前端
+- CSS
 
-categories: "前端"
+categories: "CSS"
 
-top_img:  "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/b8014a90f603738d459c2d22b51bb051f919ecd8.jpg"
-
-cover: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-gjw153.jpg
-
-background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-4yjj9g.jpg)
+cover: https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/背景/wallhaven-gjw153.webp
 
 
 ---
@@ -471,31 +466,6 @@ color: red;
 - 为已访问和未访问链接设置不同的样式
 
 - 设置元素获得焦点时的样式
-
-  |      |      |      |
-  | ---- | ---- | ---- |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-  |      |      |      |
-
   
 
 ```html
@@ -810,7 +780,7 @@ CSS盒模型本质上是一个盒子，封装周围的HTML元素，将页面中�
 - 边框(border)
 - 外边距(margin)
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/src=http___images2015.3a6n91w4q600.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/src=http___images2015.3a6n91w4q600.webp)
 
 ### 内容区(content)
 
@@ -1275,7 +1245,7 @@ margin也可以设置成负值，会向其反方向移动
 
 当两个元素结构上下相邻时，上面的下外边距会与下面元素的上外边距会合并，但如果元素左右相邻，是不会合并外边距的，因为行内元素不合并外边距
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/10871310-08913f807e434041.6q4jiq0lu3g0.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/10871310-08913f807e434041.6q4jiq0lu3g0.webp)
 
 ```html
 <!DOCTYPE html>
@@ -1313,13 +1283,13 @@ margin也可以设置成负值，会向其反方向移动
 </html>
 ```
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-22_11-26-50.6hvvbr3nbyo0.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-22_11-26-50.6hvvbr3nbyo0.webp)
 
 ##### **父子元素**
 
 父子元素如果都有上边距，会合并为其中较大的那一个
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/10871310-d9f1da29dde7c28e.11rwhsdp0uw0.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/10871310-d9f1da29dde7c28e.11rwhsdp0uw0.webp)
 
 ```html
 <!DOCTYPE html>
@@ -1362,9 +1332,9 @@ margin也可以设置成负值，会向其反方向移动
 
 如果这个外边距遇到另一个元素的外边距，它还会发生合并
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/10871310-afb31d9928a7e90a.335ld0vuvbg0.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/10871310-afb31d9928a7e90a.335ld0vuvbg0.webp)
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/10871310-8067aa8d4091fef5.6is2g0d2xl00.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/10871310-8067aa8d4091fef5.6is2g0d2xl00.webp)
 
 ##### **解决方案**
 
@@ -1831,6 +1801,65 @@ margin-left + border-left + padding-left + width + padding-right + border-right 
     <div class="bemo6"></div>
 </body>
 </html>
+```
+
+### 边界图片
+
+#### border-image 
+
+定义：允许你指定一个图片作为边框！ 用于创建上文边框的原始图像
+
+| 属性                | 属性值 | 作用                                                         |
+| ------------------- | ------ | ------------------------------------------------------------ |
+| border-image-source |        | 用于指定要用于绘制边框的图像的位置                           |
+| border-image-slice  |        | 图像边界向内偏移                                             |
+|                     | number | 数字表示图像的像素（位图图像）或向量的坐标（如果图像是矢量图像） |
+|                     | %      | 百分比图像的大小是相对的：水平偏移图像的宽度，垂直偏移图像的高度 |
+|                     | fill   | 保留图像的中间部分                                           |
+| border-image-width  |        | 图像边界的宽度                                               |
+|                     | number | 表示相应的border-width 的倍数                                |
+|                     | %      | 边界图像区域的大小：横向偏移的宽度的面积，垂直偏移的高度的面积 |
+|                     | auto   | 如果指定了，宽度是相应的image slice的内在宽度或高度          |
+| border-image-outset |        | 用于指定在边框外部绘制 border-image-area 的量                |
+|                     | length | 设置边框图像与边框（border-image）的距离，默认为0            |
+|                     | number | 代表相应的 border-width 的倍数                               |
+| border-image-repeat |        | 用于设置图像边界是否应重复（repeat）、拉伸（stretch）或铺满（round） |
+
+语法
+
+```css
+border-image: source slice width outset repeat|initial|inherit;
+```
+
+```html
+<style>
+        .div2 {
+            height: 80vh;
+            width: 80vw;
+            border: solid 50px transparent;
+            border-image: url(https://img1.baidu.com/it/u=4216761644,15569246&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500) 30 30 round;
+            background-color: aqua;
+        }
+
+        .div1 {
+            width: 200px;
+            padding: 200px;
+            border: solid 15px #dfc;
+            background-color: red;
+            border-image-source: url(https://img2.baidu.com/it/u=1146259256,2780793184&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500);
+            border-image-outset: 20px;
+            border-image-width: 12;
+            /* border-image-slice: fill; */
+            border-image-repeat: round;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="div1">拿着 </p>
+    <div class="div2"></div>
+</body>
 ```
 
 
@@ -2657,7 +2686,9 @@ top+margin-top+margin-bottom+padding—top/bottom+border-top/bottom+height+botto
 
 ## 弹性布局
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-25_10-23-09.5ohkuguuqlg0.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-25_10-23-09.5ohkuguuqlg0.webp)
+
+
 
 Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。设为Flex布局以后，子元素的float、clear和vertical-align属性将失效
 
@@ -2820,9 +2851,107 @@ Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提�
 
 ## 网格布局
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-26_05-24-48.dibvn6w9pxs.webp)
+这是一个二维系统，这意味着它可以同时处理列和行
+
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-26_05-24-48.dibvn6w9pxs.webp)
+
+### Grid Container(父元素)
+
+#### grid-template
 
 
+
+#### grid-gap
+
+
+
+#### justify-items
+
+
+
+#### align-items
+
+
+
+#### justify-content
+
+
+
+#### align-content
+
+
+
+### Grid Item(子项目)
+
+#### grid-column
+
+#### grid-row
+
+#### grid-area
+
+#### justify-self
+
+#### align-self
+
+
+
+
+
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-05-31_22-29-00.6171jjnmw800.webp)
+
+```html
+<body>
+    <style>
+        .demo {
+            height: 300px;
+            width: 600px;
+            display: grid;
+            background-color: #2196f3;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .demo2 {
+            font-size: 2em;
+            padding: 0 auto;
+            text-align: center;
+            background-color: #d3eafd;
+            margin: 10px;
+            padding-top: 20px;
+        }
+
+        .demo11 {
+            grid-column: 1/ span 5;
+        }
+
+        .demo12 {
+            grid-row: 2/span 5;
+        }
+
+        .demo13 {
+            grid-column: 2/ 4;
+        }
+
+        .demo14 {
+            grid-column: 4/ span 5;
+        }
+
+        .demo15 {
+            grid-column: 2/ span 5;
+            grid-row: 3/span 4;
+        }
+    </style>
+    <div class="demo">
+        <div class="demo2 demo11">头部</div>
+        <div class="demo2 demo12">菜单</div>
+        <div class="demo2 demo13">主要内容区域</div>
+        <div class="demo2 demo14">右侧</div>
+        <div class="demo2 demo15">底部</div>
+    </div>
+</body>
+```
+
+[网格布局小游戏](https://www.runoob.com/try/gridgarden/index.html)
 
 ## 字体
 
@@ -3319,7 +3448,13 @@ opacity: inherit;
 
 定义：颜色沿着一条直线发生变化
 
-### linear-gradient()
+### 渐变
+
+定义：可以让你在两个或多个指定的颜色之间显示平稳的过渡
+
+#### **线性渐变**
+
+##### linear-gradient()
 
 定义：用来创建一个表示两种或多种颜色线性渐变的图片
 
@@ -3348,7 +3483,9 @@ background-image:linear-gradient(to left top, blue, red);
 background-image:linear-gradient(0deg, blue, green 40%, red);
 ```
 
-### radial-gradient()
+#### **径向渐变**
+
+##### radial-gradient()
 
 定义：将径向渐变设置为背景图像
 
@@ -3376,9 +3513,9 @@ background-image:linear-gradient(0deg, blue, green 40%, red);
 
 
 
-### repeating-linear-gradient()   
+#### repeating-linear-gradient()   
 
-### repeating-radial-gradient() 
+#### repeating-radial-gradient() 
 
  定义：可以平铺的线性渐变，径向渐变
 
@@ -3534,7 +3671,7 @@ top  right  left  center  bottom
 
 要使用元素变形操作需要掌握坐标轴，然后通过改变不同坐标来控制元素的变形
 
-![](https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-26_07-08-15.1l3y0a7rutvk.webp)
+![](https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/博客-文章/Snipaste_2022-04-26_07-08-15.1l3y0a7rutvk.webp)
 
 - X轴是水平轴
 - Y轴是垂直轴

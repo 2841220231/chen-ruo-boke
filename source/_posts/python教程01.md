@@ -6,23 +6,16 @@ keywords: "Python"
 
 tags: 
 
-- 教程笔记
+- 学习笔记
 - Python
-- 编程语言
 
 categories: "Python"
 
-top_img:  "https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-5wwzq5.png"
-
-cover: https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-dgdjml.png
-
-background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/背景/wallhaven-45k784.jpg)
+cover: https://cdn1.tianli0.top/gh/2841220231/image-my-web@master/背景/wallhaven-dgdjml.webp
 
 ---
 
 
-
-# Python教程（一）
 
 python的特点，简单易学，有一个广泛的标准库，可移植，可嵌入，支持GUI编程，有互动模式
 

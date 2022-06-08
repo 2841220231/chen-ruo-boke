@@ -9,10 +9,10 @@ background: url(https://cdn.jsdelivr.net/gh/2841220231/image-my-web@master/èƒŒæ™
 
 
 
-<video playsinline="" controls="" preload="metadata" src="https://video-direct-link.vercel.app/bili.mp4?aid=759894769&bvid=BV1B64y1q7Cw&cid=393454463" style="display: block; width: 100%;border-radius:1%;"></video>
+<div style="position: relative; padding: 30% 45%;margin-top: 10px;margin-bottom: 10px; border:solid 8px #70a1ff"><iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?aid=468683262&bvid=BV1s541127AU&cid=588903361&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
 
 
-
+---
 
 {% meting  "8116933600" "tencent" "playlist" "mutex:false" "theme:#428BCA" %}
 

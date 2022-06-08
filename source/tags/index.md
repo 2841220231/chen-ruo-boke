@@ -7,6 +7,6 @@ description: "标签页"
 keywords: "标签"
 highlight_shrink: false
 top_img: "https://w.wallhaven.cc/full/o3/wallhaven-o32gd5.jpg"
+comments: false
 ---
 
-<div id="tags-chart" data-length="10" style="background-color: #20232a; border-radius: 8px; height: 300px; padding: 0.5rem;"></div>
